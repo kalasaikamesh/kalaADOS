@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@drawable/server">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="KALAADOS"
+        android:textColor="@color/design_default_color_error"
+        android:textSize="40sp"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:textColor="@color/design_default_color_error"
+        android:text="Author N V R K SAI KAMESH YADAVALLI "/>
+    <!-- IP Address Input -->
+    <EditText
+        android:id="@+id/ipAddress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter IP Address"
+        android:textColor="@color/design_default_color_error"
+        android:inputType="text"
+        android:padding="8dp"/>
+
+    <!-- Port Input -->
+    <EditText
+        android:id="@+id/portNumber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Port Number"
+        android:textColor="@color/design_default_color_error"
+        android:inputType="number"
+        android:padding="8dp"
+        android:maxLength="5"/>
+
+    <!-- TCP CheckBox -->
+    <CheckBox
+        android:id="@+id/tcpCheckBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/cardview_shadow_end_color"
+        android:text="TCP"/>
+
+    <!-- UDP CheckBox -->
+    <CheckBox
+        android:id="@+id/udpCheckBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/cardview_shadow_end_color"
+        android:text="UDP"/>
+
+    <!-- Start Button -->
+    <Button
+        android:id="@+id/startButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Start"
+        android:padding="12dp"
+        android:layout_marginTop="16dp"/>
+
+    <Button
+        android:id="@+id/StopButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Stop"
+        android:padding="12dp"
+        android:layout_marginTop="16dp"/>
+    <!-- ListView for displaying messages -->
+    <ListView
+        android:id="@+id/listView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/light"/>
+</LinearLayout>
